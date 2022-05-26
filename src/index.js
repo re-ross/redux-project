@@ -1,6 +1,13 @@
 import React from "react";
 import { render } from "react-dom";
-const Hi = () => {
-  return <p>Hi.</p>;
-};
-render(<Hi />, document.getElementById("app"));
+import { BrowserRouter as Router } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import App from "./App.jsx";
+import "./index.css";
+
+render(
+  <Router>
+    <App />
+  </Router>,
+  document.getElementById("app")
+);

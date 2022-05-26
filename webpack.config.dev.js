@@ -1,6 +1,6 @@
 const webpack = require("webpack");
 const path = require("path");
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 process.env.NODE_ENV = "development";
 
@@ -23,7 +23,7 @@ module.exports = {
     https: false,
   },
   plugins: [
-    new HtmlWebPackPlugin({
+    new HtmlWebpackPlugin({
       template: "src/index.html",
       favicon: "src/favicon.ico",
     }),

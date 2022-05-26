@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 
 export const Header = () => {
   const activeStyle = { color: "#F15B2a" };
-
   return (
     <nav>
       <NavLink to="/" activeStyle={activeStyle} exact>
@@ -12,6 +11,10 @@ export const Header = () => {
       {" | "}
       <NavLink to="/about" activeStyle={activeStyle}>
         About
+      </NavLink>
+      {" | "}
+      <NavLink to="/courses" activeStyle={activeStyle}>
+        Courses
       </NavLink>
     </nav>
   );

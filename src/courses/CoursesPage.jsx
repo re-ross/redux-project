@@ -28,13 +28,15 @@ const CoursesPage = ({ courses }) => {
     </form>
   );
 };
+
 CoursesPage.propTypes = {
   courses: PropTypes.array.isRequired,
   dispatch: PropTypes.func.isRequired,
 };
-const mapStateToProps = (state) => {
+const mapStateToProps = ({ courses }) => {
   return {
-    courses: state.courses,
+    courses,
   };
 };
+
 export default connect(mapStateToProps)(CoursesPage);
